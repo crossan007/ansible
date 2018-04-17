@@ -1,0 +1,3 @@
+[submodule "role-mailserver"]
+	path = ./ansible/roles/role-mailserver
+	url = ./ansible/roles/role-mailserver
