@@ -2,4 +2,5 @@
 # file: mailservers.yml
 - hosts: mailservers
   roles:
-    - role-mailserver
+    - role-postfix
+    - role-dovecot

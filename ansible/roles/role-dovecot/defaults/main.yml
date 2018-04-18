@@ -1,0 +1,1 @@
+dovecot__base_packages: [ 'dovecot-core','dovecot-imapd', 'dovecot-common' ]

@@ -1,4 +1,7 @@
 ---
 # file: host_vars/localhost
 mail_hostname: localhost
-mail_accepted_domains: mywackydomain
+mail_my_desination: mywackydomain
+mail_user_aliases: 
+ - vagrant: bob
+ - vagrant: sally
