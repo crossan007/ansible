@@ -1,6 +1,5 @@
 ---
-# file: webservers.yml
-- hosts: webservers
+# file: mailservers.yml
+- hosts: mailservers
   roles:
-    - common
-    - webtier
+    - role-mailserver

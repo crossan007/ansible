@@ -1,0 +1,4 @@
+---
+# file: host_vars/localhost
+mail_hostname: localhost
+mail_accepted_domains: mywackydomain
