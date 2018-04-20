@@ -25,6 +25,7 @@
 - name: Dovecot config files
   template: src={{item.src}} dest={{item.dest}}
   with_items:
+    - {src: 'templates/dovecot.conf.j2', dest: '/etc/dovecot/dovecot.conf'}
     - {src: 'templates/conf.d/10-auth.conf.j2', dest: '/etc/dovecot/conf.d/10-auth.conf'}
     - {src: 'templates/conf.d/10-director.conf.j2', dest: '/etc/dovecot/conf.d/10-director.conf'}
     - {src: 'templates/conf.d/10-logging.conf.j2', dest: '/etc/dovecot/conf.d/10-logging.conf'}
@@ -47,3 +48,4 @@
     - {src: 'templates/conf.d/auth-static.conf.ext.j2', dest: '/etc/dovecot/conf.d/auth-static.conf.ext'}
     - {src: 'templates/conf.d/auth-system.conf.ext.j2', dest: '/etc/dovecot/conf.d/auth-system.conf.ext'}
     - {src: 'templates/conf.d/auth-vpopmail.conf.ext.j2', dest: '/etc/dovecot/conf.d/auth-vpopmail.conf.ext'}
+  notify: ['Restart dovecot']
