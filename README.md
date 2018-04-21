@@ -11,6 +11,7 @@
 * [Ubuntu: Postfix overview](https://help.ubuntu.com/community/PostfixBasicSetupHowto)
 * [allurem guide](http://aurellem.org/free/html/email.html)
 * [Install Roundcube](https://linode.com/docs/email/clients/install-roundcube-on-ubuntu/)
+* [Postfix - Hosting Multiple Domains with Virtual Accounts](https://www.akadia.com/services/postfix_separate_mailboxes.html)
 
 ## Installing LAMP
 
