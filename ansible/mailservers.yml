@@ -2,6 +2,7 @@
 # file: mailservers.yml
 - hosts: mailservers
   roles:
-    - role-postfix
-    - role-dovecot
-    - role-spamassassin
+    #- role-postfix
+    #- role-dovecot
+    #- role-spamassassin
+    - role-roundcube

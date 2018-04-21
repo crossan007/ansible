@@ -8,4 +8,5 @@ mail_user_aliases:
 ssl_cert_file: /etc/ssl/certs/ssl-cert-snakeoil.pem
 ssl_key_file: /etc/ssl/private/ssl-cert-snakeoil.key
 ssl_ca_dir:  
-ssl_ca_file: /etc/ssl/certs/ca-certificates.crt 
+ssl_ca_file: /etc/ssl/certs/ca-certificates.crt
+roundcube_mysql_password: asdfasdfasdf

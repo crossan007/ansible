@@ -1,0 +1,43 @@
+<VirtualHost *:80>
+  # Virtual host configuration + information (replicate changes to *:443 below)
+  ServerAdmin root@{{mail_my_desination}}
+  ServerName {{mail_hostname}}
+  DocumentRoot /var/www/roundcube
+
+  # Permanently redirect all HTTP requests to HTTPS
+  RewriteEngine on
+  RewriteCond %{SERVER_PORT} !^443$
+  RewriteRule ^/(.*) https://%{HTTP_HOST}/$1 [NC,R=301,L]
+</VirtualHost>
+
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+  # Virtual host configuration + information (replicate changes to *:80 above)
+  ServerAdmin root@{{mail_my_desination}}
+  ServerName {{mail_hostname}}
+  DocumentRoot /var/www/roundcube
+
+  # SSL certificate + engine configuration
+  SSLEngine on
+  SSLCertificateFile {{ssl_cert_file}}
+  SSLCertificateKeyFile {{ssl_key_file}}
+
+  # Roundcube directory permissions + restrictions
+  <Directory /var/www/roundcube>
+    Options -Indexes
+    AllowOverride All
+  </Directory>
+  <Directory /var/www/roundcube/config>
+    Order Deny,Allow
+    Deny from All
+  </Directory>
+  <Directory /var/www/roundcube/temp>
+    Order Deny,Allow
+    Deny from All
+  </Directory>
+  <Directory /var/www/roundcube/logs>
+    Order Deny,Allow
+    Deny from All
+  </Directory>
+</VirtualHost>
+</IfModule>

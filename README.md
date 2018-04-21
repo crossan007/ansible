@@ -5,3 +5,6 @@
 * [Ars Technica: Taking e-mail back, part 2: Arming your server with Postfix and Dovecot](https://arstechnica.com/information-technology/2014/03/taking-e-mail-back-part-2-arming-your-server-with-postfix-dovecot/)
 * [Ubuntu: Postfix overview](https://help.ubuntu.com/community/PostfixBasicSetupHowto)
 * [allurem guide](http://aurellem.org/free/html/email.html)
+* [Install Roundcube](https://linode.com/docs/email/clients/install-roundcube-on-ubuntu/)
+
+https://thornelabs.net/2014/06/02/manage-apache-virtualhosts-and-mod-rewrite-rules-with-ansible.html
