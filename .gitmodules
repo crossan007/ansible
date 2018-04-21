@@ -1,15 +1,15 @@
-[submodule "role-postfix"]
-	path = ./ansible/roles/role-postfix
+[submodule "ansible/roles/ansible-role-postfix"]
+	path = ./ansible/roles/ansible-role-postfix
 	url = https://github.com/crossan007/ansible-role-postfix.git
 
-[submodule "role-dovecot"]
-	path = ./ansible/roles/role-dovecot
+[submodule "ansible/roles/ansible-role-dovecot"]
+	path = ./ansible/roles/ansible-role-dovecot
 	url = https://github.com/crossan007/ansible-role-dovecot.git
 	
-[submodule "role-spamassassin"]
-	path = ./ansible/roles/role-spamassassin
+[submodule "ansible/roles/ansible-role-spamassassin"]
+	path = ./ansible/roles/ansible-role-spamassassin
 	url = https://github.com/crossan007/ansible-role-spamassassin.git
 
-[submodule "role-roundcube"]
-	path = ./ansible/roles/role-roundcube
-	url = https://github.com/crossan007/ansible-role-roundcube.git
+[submodule "ansible/roles/ansible-role-roundcube"]
+	path = ./ansible/roles/ansible-role-roundcube
+	url = https://github.com/crossan007/ansible-role-spamassassin.git
