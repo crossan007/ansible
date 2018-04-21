@@ -5,3 +5,7 @@
 [submodule "role-dovecot"]
 	path = ./ansible/roles/role-dovecot
 	url = ./ansible/roles/role-dovecot
+	
+[submodule "role-spamassassin"]
+	path = ./ansible/roles/role-spamassassin
+	url = ./ansible/roles/role-spamassassin

@@ -1,25 +1,7 @@
 protocols = imap sieve
 
-mail_home = /var/mail/vmail/%d/%n
-mail_location = maildir:/var/mail/vmail/%d/%n/mail:LAYOUT=fs
-auth_username_chars = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890.-_@
-
-# IMAP configuration
-protocol imap {
- 	mail_max_userip_connections = 10
-	imap_client_workarounds = delay-newmail tb-extra-mailbox-sep
-}
-
-# LDA configuration
-protocol lda {
-	postmaster_address = postmaster@yourdomain.com
-	mail_plugins = sieve
-	quota_full_tempfail = yes
-	deliver_log_format = msgid=%m: %$
-	rejection_reason = Your message to <%t> was automatically rejected:%n%r
-}
-
 # Plugins configuration
+
 plugin {
 	sieve=~/.dovecot.sieve
 	sieve_dir=~/sieve
@@ -27,37 +9,6 @@ plugin {
 	sieve_after = /var/mail/vmail/sieve-after
 }
 
-# Authentication configuration
-auth_mechanisms = plain login
-
-passdb {
-	driver = passwd-file
-	args = username_format=%u scheme=ssha512 /etc/dovecot/passwd.db
-	deny = no
-	master = no
-	pass = no
-	skip = never
-	result_failure = continue
-	result_internalfail = continue
-	result_success = return-ok
-}
-
-userdb {
-	driver = static
-	args = uid=5000 gid=5000 home=/var/mail/vmail/%d/%n
-}
-
-# Log all failed authentication attempts
-auth_verbose=yes
-
-service auth {
-  # Postfix smtp-auth
-  unix_listener /var/spool/postfix/private/dovecot-auth {
-	mode = 0660
-	user = postfix
-	group = postfix
-  }
-}
 
 # temporary imapc stuff for gmail mail migration
 #imapc_host = imap.gmail.com

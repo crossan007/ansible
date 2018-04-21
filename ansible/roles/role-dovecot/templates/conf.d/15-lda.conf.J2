@@ -43,6 +43,9 @@
 #lda_mailbox_autosubscribe = no
 
 protocol lda {
-  # Space separated list of plugins to load (default is global mail_plugins).
-  #mail_plugins = $mail_plugins
+	postmaster_address = postmaster@yourdomain.com
+	mail_plugins = sieve
+	quota_full_tempfail = yes
+	deliver_log_format = msgid=%m: %$
+	rejection_reason = Your message to <%t> was automatically rejected:%n%r
 }

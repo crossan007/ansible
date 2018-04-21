@@ -4,3 +4,4 @@
   roles:
     - role-postfix
     - role-dovecot
+    - role-spamassassin
