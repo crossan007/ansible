@@ -2,7 +2,7 @@
 # file: mailservers.yml
 - hosts: mailservers
   roles:
-    #- role-postfix
-    #- role-dovecot
-    #- role-spamassassin
-    - role-roundcube
+    - ansible-role-postfix
+    - ansible-role-dovecot
+    - ansible-role-spamassassin
+    - ansible-role-roundcube
