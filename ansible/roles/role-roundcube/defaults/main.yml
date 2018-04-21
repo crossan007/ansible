@@ -1,6 +1,0 @@
-roundcube_base_packages: ['apache2', 'php-pear', 'php7.0-intl', 'php7.0-mcrypt', 'php7.0-mbstring', 'libaio1', 'libapache2-mod-php', 'libapache2-mod-php7.0', 'libcgi-fast-perl', 'libcgi-pm-perl', 'libencode-locale-perl', 'libevent-core-2.0-5', 'libfcgi-perl', 'libhtml-template-perl', 'libhttp-message-perl', 'libio-html-perl', 'liblwp-mediatypes-perl', 'mysql-client-5.7', 'mysql-client-core-5.7', 'mysql-common', 'mysql-server', 'mysql-server-5.7', 'mysql-server-core-5.7', 'php-mysql', 'php7.0-mysql', 'php7.0-gd', 'php-imagick', 'php-mysql', 'python-mysqldb']
-roundcube_apache_modules: ['deflate','expires','headers','rewrite','ssl']
-
-roundcube_mysql_database_name: 'Roundcube-{{mail_my_desination}}'
-
-roundcube_mysql_user_name: 'RoundcubeUser-{{mail_my_desination}}'
