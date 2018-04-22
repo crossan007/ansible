@@ -2,6 +2,7 @@
 
 ## Installing Mail Stack
 
+* [Postfix Documentation](http://www.postfix.org/documentation.html)
 * [Linode: Email with Postfix, Dovecot, and MySQL](https://linode.com/docs/email/postfix/email-with-postfix-dovecot-and-mysql/)
 * [Linode: Install Roundcube on Ubuntu 16.04](https://linode.com/docs/email/clients/install-roundcube-on-ubuntu/)
 * [Digital Ocean: How To Install and Configure Postfix on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-postfix-on-ubuntu-16-04)
@@ -13,8 +14,8 @@
 * [Install Roundcube](https://linode.com/docs/email/clients/install-roundcube-on-ubuntu/)
 * [Postfix - Hosting Multiple Domains with Virtual Accounts](https://www.akadia.com/services/postfix_separate_mailboxes.html)
 
-*  [Install Roundcube and postfix](https://www.tecmint.com/install-and-configure-roundcube-webmail-for-postfix-mail-server/)
-
+* [Install Roundcube and postfix](https://www.tecmint.com/install-and-configure-roundcube-webmail-for-postfix-mail-server/)
+* [Dovecot How-To](https://wiki.dovecot.org/HowTo)
 * [Virtual User Mail System](https://wiki.archlinux.org/index.php/Virtual_user_mail_system)
 
 

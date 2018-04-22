@@ -5,4 +5,4 @@
     - ansible-role-postfix
     - ansible-role-dovecot
     - ansible-role-spamassassin
-    #- ansible-role-roundcube
+    - ansible-role-roundcube
