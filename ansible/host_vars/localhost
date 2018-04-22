@@ -2,10 +2,11 @@
 # file: host_vars/localhost
 mail_hostname: localhost
 mail_my_domain: test.com
-mail_virtual_aliases: 
- - vagrant@test.com: vagrant
+mail_virtual_alias_maps: 
+    - 'vagrant@bob.com': 'vagrant@test.com'
+    - '@gmail.com' : 'vagrant@test.com'
 mail_root_recipient: vagrant
-mail_virtual_domains: ['bob.com']
+mail_virtual_domains: ['fcc.com']
 mail_receive_from_root: vagrant
 mail_size_limit: 104857600
 ssl_cert_file: /etc/ssl/certs/ssl-cert-snakeoil.pem
